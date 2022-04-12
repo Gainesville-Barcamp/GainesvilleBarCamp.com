@@ -11,8 +11,8 @@
     "build": "parcel build ./src/index.html --no-minify  --no-source-maps --out-dir ."
   },
   "devDependencies": {
-    "cssnano": "^4.1.10",
-    "node-sass": "^4.12.0",
+    "cssnano": "^5.1.7",
+    "node-sass": "^6.0.1",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.23.1"
   },
