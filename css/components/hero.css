@@ -16,7 +16,11 @@ header.hero .col-left {
   grid-row: 1;
   z-index: 1;
   padding: 9.6rem;
+<<<<<<< HEAD
   background: #2A2E39 url(../images/plus-texture.svg) no-repeat right center;
+=======
+  background: #2A2E39 url("/images/plus-texture.svg") no-repeat right center;
+>>>>>>> master
 }
 @media (max-width: 900px) {
   header.hero .col-left {
