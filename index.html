@@ -44,10 +44,10 @@
   </head>
   <body class="cotton-candy">
     <ul class="themes">
-      <li><a href="#/" class="cotton-candy" onclick="setTheme('cotton-candy')">cotton candy theme</a></li>
-      <li><a href="#/" class="sunset" onclick="setTheme('sunset')">sunset theme</a></li>
-      <li><a href="#/" class="mist" onclick="setTheme('mist')">mist theme</a></li>
-      <li><a href="#/" class="teen-party" onclick="setTheme('teen-party')">teen party</a></li>
+      <li><a href="#/" data-theme="cotton-candy" class="cotton-candy">cotton candy theme</a></li>
+      <li><a href="#/" data-theme="sunset" class="sunset">sunset theme</a></li>
+      <li><a href="#/" data-theme="mist" class="mist">mist theme</a></li>
+      <li><a href="#/" data-theme="teen-party" class="teen-party">teen party</a></li>
     </ul>
     <header class="hero">
         <div class="col-left">
@@ -359,30 +359,6 @@
         </p>
       </div>
     </footer>
-    <script type="text/javascript">
-      var body = document.body;
-
-      function setTheme(theme) {
-        body.classList = ""
-        body.classList.add(theme);
-        var metaThemeColor = document.querySelector("meta[name=theme-color]");
-
-        switch(theme) {
-          case "cotton-candy":
-            metaThemeColor.setAttribute("content", '#00dbde');
-            break;
-          case "sunset":
-            metaThemeColor.setAttribute("content", '#FF1361');
-            break;
-          case "mist":
-            metaThemeColor.setAttribute("content", '#35eb93');
-            break;
-          default:
-            metaThemeColor.setAttribute("content", '#cc208e');
-        }
-        return false;
-      }
-
-    </script>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>
