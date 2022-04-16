@@ -104,7 +104,7 @@ ul.themes {
       animation-delay: 0.75s;
     }
 
-    a {
+    a:where(:not(.button)) {
       position: relative;
       display: inline-block;
       height: $base-unit;
@@ -243,7 +243,7 @@ body.cotton-candy {
     }
   }
 
-  a {
+  a:where(:not(.button)) {
     color: barcamp-color("cotton-candy--secondary");
 
     &:before {
@@ -331,7 +331,7 @@ body.sunset {
     }
   }
 
-  a {
+  a:where(:not(.button)) {
     color: barcamp-color("sunset--tertiary");
 
     &:before {
@@ -419,7 +419,7 @@ body.mist {
     }
   }
 
-  a {
+  a:where(:not(.button)) {
     color: barcamp-color("mist--quaternary");
 
     &:before {

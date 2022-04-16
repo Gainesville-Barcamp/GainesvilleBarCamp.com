@@ -106,7 +106,7 @@ ul.themes li:nth-child(4) {
   -webkit-animation-delay: 0.75s;
           animation-delay: 0.75s;
 }
-ul.themes li a {
+ul.themes li a:where(:not(.button)) {
   position: relative;
   display: inline-block;
   height: 1.6rem;
@@ -119,35 +119,35 @@ ul.themes li a {
   border: 0;
   background: #fff;
 }
-ul.themes li a.cotton-candy:before {
+ul.themes li a:where(:not(.button)).cotton-candy:before {
   transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
   background: #00dbde;
 }
-ul.themes li a.cotton-candy:after {
+ul.themes li a:where(:not(.button)).cotton-candy:after {
   transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
   background: #fc00ff;
 }
-ul.themes li a.sunset:before {
+ul.themes li a:where(:not(.button)).sunset:before {
   transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
   background: #231557;
 }
-ul.themes li a.sunset:after {
+ul.themes li a:where(:not(.button)).sunset:after {
   transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
   background: #44107A;
 }
-ul.themes li a.mist:before {
+ul.themes li a:where(:not(.button)).mist:before {
   transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
   background: #3d3393;
 }
-ul.themes li a.mist:after {
+ul.themes li a:where(:not(.button)).mist:after {
   transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
   background: #2b76b9;
 }
-ul.themes li a.teen-party:before {
+ul.themes li a:where(:not(.button)).teen-party:before {
   transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
   background: #cc208e;
 }
-ul.themes li a.teen-party:after {
+ul.themes li a:where(:not(.button)).teen-party:after {
   transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
   background: #6713d2;
 }
@@ -211,14 +211,14 @@ body.cotton-candy .photo-themes span.cotton-candy {
     opacity: 1;
   }
 }
-body.cotton-candy a {
+body.cotton-candy a:where(:not(.button)) {
   color: #fc00ff;
 }
-body.cotton-candy a:before {
+body.cotton-candy a:where(:not(.button)):before {
   transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
   background: #fc00ff;
 }
-body.cotton-candy a:after {
+body.cotton-candy a:where(:not(.button)):after {
   transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
   background: #00dbde;
 }
@@ -279,14 +279,14 @@ body.sunset .photo-themes span.sunset {
     opacity: 1;
   }
 }
-body.sunset a {
+body.sunset a:where(:not(.button)) {
   color: #FF1361;
 }
-body.sunset a:before {
+body.sunset a:where(:not(.button)):before {
   transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
   background: #FF1361;
 }
-body.sunset a:after {
+body.sunset a:where(:not(.button)):after {
   transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
   background: #FFF800;
 }
@@ -347,14 +347,14 @@ body.mist .photo-themes span.mist {
     opacity: 1;
   }
 }
-body.mist a {
+body.mist a:where(:not(.button)) {
   color: #35eb93;
 }
-body.mist a:before {
+body.mist a:where(:not(.button)):before {
   transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
   background: #35eb93;
 }
-body.mist a:after {
+body.mist a:where(:not(.button)):after {
   transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
   background: #3d3393;
 }

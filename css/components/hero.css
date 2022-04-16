@@ -87,12 +87,30 @@ header.hero .col-right {
   }
 }
 header.hero .col-right .photo--hero {
+  position: relative;
   width: 45rem;
-  max-height: 63rem;
   overflow: hidden;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0 0.8rem 3.2rem rgba(0, 0, 0, 0.15));
 }
 header.hero .col-right .photo--hero img {
   width: 45rem;
   height: auto;
+}
+
+.button-register {
+  position: relative;
+  z-index: 300;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  transform: translatey(-50%);
+  border-color: transparent;
+  background: #6713d2;
+  color: white;
+  font-size: 2.8rem;
+  font-weight: bold;
+  transition: none;
 }
