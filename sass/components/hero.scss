@@ -19,7 +19,7 @@ header.hero {
     grid-row: 1;
     z-index: 1;
     padding: $base-unit * 6;
-    background: barcamp-color("midnight") url(../images/plus-texture.svg)
+    background: barcamp-color("midnight") url('/images/plus-texture.svg')
       no-repeat right center;
 
     @media (max-width: 900px) {
