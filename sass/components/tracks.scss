@@ -1,0 +1,147 @@
+@use 'sass:math';
+@import "../variables";
+/*------------------------------
+Our Tracks
+-------------------------------*/
+
+.our-tracks {
+  .col-full {
+    & > .photo-themes {
+      position: relative;
+      padding: $base-unit * 2;
+      margin: 0;
+      background-blend-mode: screen;
+      background-image: url("/images/photo-003.jpg"), $cotton-candy;
+      background-size: cover;
+      min-height: 500px;
+
+      &:before,
+      &:after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+      }
+
+      ul {
+        z-index: 500;
+        position: relative;
+        padding: $base-unit * 4 0;
+        margin: 0 auto;
+        text-align: center;
+        list-style-type: none;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        li {
+          position: relative;
+          vertical-align: top;
+          text-align: left;
+          display: inline-block;
+          padding: $base-unit * 2 $base-unit;
+          margin: $base-unit;
+          max-width: 300px;
+          min-width: 250px;
+          height: 300px;
+          background: #fff;
+          box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.15);
+
+          p {
+            text-align: left;
+            font-size: 1.8rem;
+            line-height: 1.25;
+            margin-bottom: $base-unit * 2;
+          }
+
+          i {
+            font-size: 1.6rem;
+            color: #fff;
+            font-style: normal;
+            font-weight: 400;
+            padding: math.div($base-unit,2) $base-unit;
+            position: absolute;
+            top: calc(-1 * #{math.div($base-unit,2)});
+            right: calc(-1 * #{math.div($base-unit,2)});
+            background: barcamp-color("teen-party--secondary");
+          }
+        }
+      }
+    }
+
+    & > table {
+      z-index: 500;
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: -59px auto 0 auto;
+      background: #fff;
+      border: none;
+      border-collapse: collapse;
+      border-spacing: 0;
+      box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
+
+      th,
+      td {
+        text-align: left;
+        padding: $base-unit;
+      }
+
+      thead th {
+        text-align: left;
+        font-size: 2.4rem;
+        font-weight: 300;
+        color: #fff;
+        background: barcamp-color("midnight");
+      }
+
+      tbody tr:first-child {
+        td {
+          background: barcamp-color("specter");
+        }
+
+        td:first-child {
+          width: 200px;
+        }
+      }
+
+      tbody td {
+        font-size: 1.8rem;
+        border-top: 1px solid darken(barcamp-color("specter"), 5%);
+
+        small {
+          margin-top: math.div($base-unit,2);
+          display: block;
+          font-size: 1.4rem;
+          width: 90%;
+
+          ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+              display: inline-block;
+              margin-right: $base-unit;
+            }
+          }
+        }
+      }
+
+      tfoot td {
+        text-align: center;
+        border-top: 1px solid darken(barcamp-color("specter"), 5%);
+        background: barcamp-color("specter");
+
+        small {
+          display: inline-block;
+          font-size: 1.4rem;
+          padding: math.div($base-unit,4) math.div($base-unit,4) math.div($base-unit,4) $base-unit * 3;
+          background: transparent
+            url('/svg/tracks-small.svg')
+            no-repeat;
+          background-position: left center;
+        }
+      }
+    }
+  }
+}

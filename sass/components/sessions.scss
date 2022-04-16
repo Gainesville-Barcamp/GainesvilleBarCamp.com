@@ -1,0 +1,146 @@
+@use 'sass:math';
+@import "../variables";
+
+/*------------------------------
+Our Sessions
+-------------------------------*/
+
+.our-sessions {
+  grid-template-columns: repeat(12, 1fr);
+
+  .col-full {
+    grid-row: 1;
+
+    h2,
+    p {
+      text-align: center;
+      max-width: 1440px;
+
+      @media (max-width: 900px) {
+        text-align: left;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .col-left {
+    grid-column: 2 / 7;
+  }
+
+  .col-right {
+    grid-column: 7 / 12;
+  }
+
+  .col-left,
+  .col-right {
+    grid-row: 2;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+      grid-column: 1 / -1;
+      grid-row: auto;
+    }
+
+    .session {
+      margin: $base-unit * 2 0;
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: auto;
+      background: #fff;
+      box-shadow: 0 math.div($base-unit,2) $base-unit * 2 0 rgba(42, 56, 57, 0.15);
+      border: 1px solid barcamp-color("specter");
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 50px;
+        right: 0;
+        bottom: 0;
+        background: barcamp-color("teen-party--primary");
+        transition: all 0.5s ease-in-out;
+      }
+
+      &:after {
+        right: 50px;
+        background: barcamp-color("teen-party--secondary");
+      }
+
+      &_vr {
+        display: inline-block;
+        width: 150px;
+        background-size: cover;
+        background: barcamp-color("midnight")
+          url('/svg/session-vr.svg')
+          no-repeat top left;
+
+        .photo-themes,
+        .photo-themes span {
+          height: 100%;
+        }
+      }
+
+      &_content {
+        padding: $base-unit * 2;
+        width: 100%;
+
+        i {
+          font-size: 1.6rem;
+          color: #fff;
+          font-style: normal;
+          font-weight: 400;
+          padding: math.div($base-unit,2) $base-unit;
+          position: absolute;
+          top: calc(-1 * #{math.div($base-unit,2)});
+          right: calc(-1 * #{math.div($base-unit,2)});
+          background: barcamp-color("teen-party--secondary");
+        }
+
+        h4 {
+          margin-bottom: $base-unit;
+
+          small {
+            display: block;
+            font-size: 1.6rem;
+            margin-bottom: $base-unit;
+          }
+        }
+
+        p {
+          text-align: left;
+          font-size: 1.6rem;
+        }
+      }
+
+      &--holly .session_vr {
+        background: barcamp-color("specter") url(../images/holly.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      &--derek .session_vr {
+        background: barcamp-color("specter") url(../images/derek.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      &--michelle-peter .session_vr {
+        background: barcamp-color("specter") url(../images/michelle-peter.jpg)
+          no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      &--watt .session_vr {
+        background: barcamp-color("specter") url(../images/WATT.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+/*------------------------------
+What is BarCamp
+-------------------------------*/
+@media (max-width: 900px) {
+  .what-is-barcamp .col-left {
+    grid-row: 2;
+  }
+}
+@media (max-width: 900px) {
+  .what-is-barcamp .col-ight {
+    grid-row: 1;
+  }
+}
+.what-is-barcamp .photo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.what-is-barcamp .photo-grid .photo--001 {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 100;
+  width: 32.5rem;
+  height: 45rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+}
+.what-is-barcamp .photo-grid .photo--002 {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 200;
+  width: 26.5rem;
+  height: 36.8rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+  margin: 0 0 0 -70%;
+  transition: all 1s ease-in-out;
+}
+@media (max-width: 900px) {
+  .what-is-barcamp .photo-grid .photo--002 {
+    margin: 0 0 0 -50%;
+  }
+}
+@media (max-width: 600px) {
+  .what-is-barcamp .photo-grid .photo--002 {
+    display: none;
+  }
+}
+.what-is-barcamp .texture {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 300;
+  width: 27.5rem;
+  height: 25.5rem;
+  background: transparent url("/svg/texture.svg");
+  opacity: 0.5;
+  transition: all 1s ease-in-out;
+}
+@supports (mix-blend-mode: hue) {
+  .what-is-barcamp .texture {
+    opacity: 1;
+    mix-blend-mode: hue;
+  }
+}

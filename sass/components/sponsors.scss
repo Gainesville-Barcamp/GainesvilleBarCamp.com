@@ -1,0 +1,49 @@
+@import "../variables";
+
+/*------------------------------
+Our Sponsors
+-------------------------------*/
+
+.our-sponsors {
+  ul {
+    position: relative;
+    z-index: 100;
+    padding: $base-unit;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+
+    li {
+      vertical-align: top;
+      text-align: center;
+      margin: 0;
+      padding: $base-unit * 2;
+      border-top: 1px solid barcamp-color("specter");
+
+      &:first-child {
+        border-top: 0;
+      }
+
+      a {
+        position: relative;
+        display: inline-block;
+
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+
+      img {
+        width: 250px;
+        height: auto;
+      }
+
+      img.tall {
+        height: 200px;
+        width: auto;
+      }
+    }
+  }
+}

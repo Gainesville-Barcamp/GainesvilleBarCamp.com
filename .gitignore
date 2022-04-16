@@ -1,9 +1,5 @@
-src/*
+dist/*
 .cache/*
 node_modules/*
 .vscode/settings.json
-<<<<<<< HEAD
-
-=======
 .DS_Store
->>>>>>> master
