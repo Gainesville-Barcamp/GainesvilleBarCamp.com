@@ -1,0 +1,6 @@
+header.hero .logo .logo__b {
+  fill: var(--theme--active--primary);
+}
+header.hero .logo .logo__n {
+  fill: var(--theme--active--secondary);
+}

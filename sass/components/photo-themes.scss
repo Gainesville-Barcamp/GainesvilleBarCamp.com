@@ -1,0 +1,19 @@
+@import "../variables";
+
+.photo-themes {
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    mix-blend-mode: screen;
+    background: var(--theme--active--gradient);
+    transition: background 0.2s;
+  }
+}

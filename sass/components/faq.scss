@@ -54,12 +54,12 @@ Frequently asked questions
           width: 50px;
           right: 0;
           top: 0;
-          background: barcamp-color("teen-party--primary");
+          background: var(--theme--active--primary);
         }
 
         &:after {
           right: 50px;
-          background: barcamp-color("teen-party--secondary");
+          background: var(--theme--active--secondary);
         }
       }
 

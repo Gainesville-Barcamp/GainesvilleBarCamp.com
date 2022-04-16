@@ -13,7 +13,7 @@ Where is BarCamp
   max-width: 107rem;
   max-height: 53.5rem;
   margin: 0 auto;
-  background-image: url("/images/hippodrome-small.jpg"), linear-gradient(#cc208e 0%, #6713d2 100%);
+  background-image: url("/images/hippodrome-small.jpg"), var(--theme--active--gradient);
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
@@ -22,37 +22,6 @@ Where is BarCamp
   .where-is-barcamp .location {
     grid-column: 1/-1;
   }
-}
-.where-is-barcamp .location:before, .where-is-barcamp .location:after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  opacity: 0.5;
-  transition: all 1s ease-in-out;
-}
-@supports (mix-blend-mode: hue) {
-  .where-is-barcamp .location:before, .where-is-barcamp .location:after {
-    opacity: 1;
-    mix-blend-mode: hue;
-  }
-}
-.where-is-barcamp .location:before {
-  z-index: -1;
-  top: 10.2rem;
-  left: -20rem;
-  height: 35rem;
-  width: 45rem;
-  background: transparent url("/svg/location-before.svg") no-repeat top left;
-}
-.where-is-barcamp .location:after {
-  z-index: 500;
-  top: 10.2rem;
-  right: -25rem;
-  height: 35rem;
-  width: 45rem;
-  background: transparent url("/svg/location-after.svg") no-repeat top left;
-  mix-blend-mode: hue;
 }
 .where-is-barcamp .location .address {
   z-index: 500;

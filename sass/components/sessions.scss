@@ -62,13 +62,13 @@ Our Sessions
         width: 50px;
         right: 0;
         bottom: 0;
-        background: barcamp-color("teen-party--primary");
+        background: var(--theme--active--primary);
         transition: all 0.5s ease-in-out;
       }
 
       &:after {
         right: 50px;
-        background: barcamp-color("teen-party--secondary");
+        background: var(--theme--active--secondary);
       }
 
       &_vr {
@@ -98,7 +98,7 @@ Our Sessions
           position: absolute;
           top: calc(-1 * #{math.div($base-unit,2)});
           right: calc(-1 * #{math.div($base-unit,2)});
-          background: barcamp-color("teen-party--secondary");
+          background: var(--theme--active--secondary);
         }
 
         h4 {

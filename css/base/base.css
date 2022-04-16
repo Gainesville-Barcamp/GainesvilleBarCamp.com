@@ -9,15 +9,15 @@ Base
 
 *::-moz-selection {
   color: white;
-  background: #6713d2;
+  background: var(--theme--selection);
 }
 
 *::selection {
   color: white;
-  background: #6713d2;
+  background: var(--theme--selection);
 }
 
-*:focus {
+*:focus:not(:focus-visible) {
   outline: 0;
 }
 
@@ -44,7 +44,7 @@ body {
 a {
   position: relative;
   display: inline-block;
-  color: #cc208e;
+  color: var(--theme--active--primary);
   transition: color 0.2s ease;
   text-decoration: none;
   z-index: 100;
@@ -68,11 +68,11 @@ a:after, a:before {
 }
 a:before {
   transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
-  background: #cc208e;
+  background: var(--theme--active--primary);
 }
 a:after {
   transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
-  background: #6713d2;
+  background: var(--theme--active--secondary);
 }
 
 img {
