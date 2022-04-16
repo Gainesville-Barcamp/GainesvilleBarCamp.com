@@ -1,0 +1,153 @@
+/*------------------------------
+Grid stuff
+-------------------------------*/
+.hero,
+.what-is-barcamp,
+.how-does-it-work,
+.frequently-asked-question,
+.where-is-barcamp,
+.our-tracks,
+.our-sessions,
+.our-sponsors,
+footer {
+  max-width: 144rem;
+  margin: 6.4rem auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 3.2rem;
+}
+@media (max-width: 900px) {
+  .hero,
+.what-is-barcamp,
+.how-does-it-work,
+.frequently-asked-question,
+.where-is-barcamp,
+.our-tracks,
+.our-sessions,
+.our-sponsors,
+footer {
+    grid-template-columns: 1fr;
+  }
+}
+.hero .col-full,
+.what-is-barcamp .col-full,
+.how-does-it-work .col-full,
+.frequently-asked-question .col-full,
+.where-is-barcamp .col-full,
+.our-tracks .col-full,
+.our-sessions .col-full,
+.our-sponsors .col-full,
+footer .col-full {
+  grid-column: 1/-1;
+}
+@media (max-width: 900px) {
+  .hero .col-full,
+.what-is-barcamp .col-full,
+.how-does-it-work .col-full,
+.frequently-asked-question .col-full,
+.where-is-barcamp .col-full,
+.our-tracks .col-full,
+.our-sessions .col-full,
+.our-sponsors .col-full,
+footer .col-full {
+    padding: 0 1.6rem;
+  }
+}
+.hero .col-full h2,
+.hero .col-full p,
+.what-is-barcamp .col-full h2,
+.what-is-barcamp .col-full p,
+.how-does-it-work .col-full h2,
+.how-does-it-work .col-full p,
+.frequently-asked-question .col-full h2,
+.frequently-asked-question .col-full p,
+.where-is-barcamp .col-full h2,
+.where-is-barcamp .col-full p,
+.our-tracks .col-full h2,
+.our-tracks .col-full p,
+.our-sessions .col-full h2,
+.our-sessions .col-full p,
+.our-sponsors .col-full h2,
+.our-sponsors .col-full p,
+footer .col-full h2,
+footer .col-full p {
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .hero .col-full h2,
+.hero .col-full p,
+.what-is-barcamp .col-full h2,
+.what-is-barcamp .col-full p,
+.how-does-it-work .col-full h2,
+.how-does-it-work .col-full p,
+.frequently-asked-question .col-full h2,
+.frequently-asked-question .col-full p,
+.where-is-barcamp .col-full h2,
+.where-is-barcamp .col-full p,
+.our-tracks .col-full h2,
+.our-tracks .col-full p,
+.our-sessions .col-full h2,
+.our-sessions .col-full p,
+.our-sponsors .col-full h2,
+.our-sponsors .col-full p,
+footer .col-full h2,
+footer .col-full p {
+    text-align: left;
+  }
+}
+.hero .col-left,
+.what-is-barcamp .col-left,
+.how-does-it-work .col-left,
+.frequently-asked-question .col-left,
+.where-is-barcamp .col-left,
+.our-tracks .col-left,
+.our-sessions .col-left,
+.our-sponsors .col-left,
+footer .col-left {
+  grid-column: 2/5;
+  grid-row: 1;
+}
+@media (max-width: 900px) {
+  .hero .col-left,
+.what-is-barcamp .col-left,
+.how-does-it-work .col-left,
+.frequently-asked-question .col-left,
+.where-is-barcamp .col-left,
+.our-tracks .col-left,
+.our-sessions .col-left,
+.our-sponsors .col-left,
+footer .col-left {
+    grid-column: 1/-1;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    grid-row: auto;
+  }
+}
+.hero .col-right,
+.what-is-barcamp .col-right,
+.how-does-it-work .col-right,
+.frequently-asked-question .col-right,
+.where-is-barcamp .col-right,
+.our-tracks .col-right,
+.our-sessions .col-right,
+.our-sponsors .col-right,
+footer .col-right {
+  grid-column: 5/8;
+  grid-row: 1;
+}
+@media (max-width: 900px) {
+  .hero .col-right,
+.what-is-barcamp .col-right,
+.how-does-it-work .col-right,
+.frequently-asked-question .col-right,
+.where-is-barcamp .col-right,
+.our-tracks .col-right,
+.our-sessions .col-right,
+.our-sponsors .col-right,
+footer .col-right {
+    grid-column: 1/-1;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    grid-row: auto;
+  }
+}

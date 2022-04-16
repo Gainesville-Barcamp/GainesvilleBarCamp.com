@@ -1,0 +1,102 @@
+@use 'sass:math';
+@import "../variables";
+/*------------------------------
+Where is BarCamp
+-------------------------------*/
+
+.where-is-barcamp {
+  padding: 0 $base-unit;
+
+  .location {
+    grid-column: 2 / 8;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1070px;
+    max-height: 535px;
+    margin: 0 auto;
+    background-image: url("/images/hippodrome-small.jpg"), $teen-party;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 math.div($base-unit,2) $base-unit * 2 0 rgba(0, 0, 0, 0.15);
+
+    @media (max-width: 900px) {
+      grid-column: 1 / -1;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      opacity: 0.5;
+      transition: all 1s ease-in-out;
+
+      @supports (mix-blend-mode: hue) {
+        opacity: 1;
+        mix-blend-mode: hue;
+      }
+    }
+
+    &:before {
+      z-index: -1;
+      top: 102px;
+      left: -200px;
+      height: 350px;
+      width: 450px;
+      background: transparent
+        url('/svg/location-before.svg')
+        no-repeat top left;
+    }
+
+    &:after {
+      z-index: 500;
+      top: 102px;
+      right: -250px;
+      height: 350px;
+      width: 450px;
+      background: transparent
+        url('/svg/location-after.svg')
+        no-repeat top left;
+      mix-blend-mode: hue;
+    }
+
+    .address {
+      z-index: 500;
+      position: relative;
+      padding: $base-unit * 4 $base-unit * 2;
+      color: #fff;
+      width: 600px;
+      background: barcamp-color("midnight");
+      background-repeat: no-repeat;
+      background-position: center left;
+
+      h2 {
+        margin-bottom: $base-unit * 2;
+      }
+
+      a {
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 300;
+        text-decoration: none;
+      }
+
+      @media only screen and (max-width: 600px) {
+        width: 100%;
+      }
+    }
+
+    iframe {
+      position: relative;
+      z-index: 500;
+      height: 450px;
+      width: 600px;
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+  }
+}

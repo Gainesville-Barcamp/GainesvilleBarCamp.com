@@ -1,0 +1,76 @@
+/*---------------------
+Base
+----------------------*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+*::-moz-selection {
+  color: white;
+  background: #6713d2;
+}
+
+*::selection {
+  color: white;
+  background: #6713d2;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #2A2E39;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  color: #cc208e;
+  transition: color 0.2s ease;
+  text-decoration: none;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+}
+a:hover {
+  color: #fff;
+}
+a:hover::after, a:hover::before {
+  width: 100%;
+  left: 0;
+}
+a:after, a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+}
+a:before {
+  transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+  background: #cc208e;
+}
+a:after {
+  transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  background: #6713d2;
+}

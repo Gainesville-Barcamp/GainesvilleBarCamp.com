@@ -1,0 +1,71 @@
+@use 'sass:math';
+@import "../variables";
+/*------------------------------
+What is BarCamp
+-------------------------------*/
+
+.what-is-barcamp {
+  .col-left {
+    @media (max-width: 900px) {
+      grid-row: 2;
+    }
+  }
+
+  .col-ight {
+    @media (max-width: 900px) {
+      grid-row: 1;
+    }
+  }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+
+    .photo--001 {
+      grid-column: 1;
+      grid-row: 1;
+      z-index: 100;
+      width: 325px;
+      height: 450px;
+      box-shadow: 0 math.div($base-unit,2) $base-unit * 2 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .photo--002 {
+      grid-column: 1;
+      grid-row: 1;
+      z-index: 200;
+      width: 265px;
+      height: 368px;
+      box-shadow: 0 math.div($base-unit,2) $base-unit * 2 0 rgba(0, 0, 0, 0.15);
+      margin: 0 0 0 -70%;
+      transition: all 1s ease-in-out;
+
+      @media (max-width: 900px) {
+        margin: 0 0 0 -50%;
+      }
+
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+
+  .texture {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 300;
+    width: 275px;
+    height: 255px;
+    background: transparent
+      url('/svg/texture.svg');
+    opacity: 0.5;
+    transition: all 1s ease-in-out;
+
+    @supports (mix-blend-mode: hue) {
+      opacity: 1;
+      mix-blend-mode: hue;
+    }
+  }
+}

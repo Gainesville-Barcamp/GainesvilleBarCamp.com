@@ -1,0 +1,93 @@
+@use 'sass:math';
+@import "../variables";
+/*------------------------------
+Frequently asked questions
+-------------------------------*/
+
+.frequently-asked-question {
+  padding-top: 0;
+
+  .col-full {
+    grid-row: 1;
+  }
+
+  .col-left,
+  .col-right {
+    grid-row: 2;
+
+    @media (max-width: 900px) {
+      grid-row: auto;
+    }
+  }
+
+  .col-right {
+    @media (max-width: 900px) {
+      margin-top: $base-unit * 2;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    li {
+      position: relative;
+      padding: $base-unit * 2;
+      margin: $base-unit * 2 0 0 0;
+      background: barcamp-color("off-white");
+      border: 1px solid barcamp-color("specter");
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        transition: all 0.5s ease-in-out;
+      }
+
+      &:first-child {
+        margin-top: 0;
+
+        &:before,
+        &:after {
+          height: 1px;
+          width: 50px;
+          right: 0;
+          top: 0;
+          background: barcamp-color("teen-party--primary");
+        }
+
+        &:after {
+          right: 50px;
+          background: barcamp-color("teen-party--secondary");
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 1.8rem;
+        max-width: 90%;
+      }
+
+      & > ul {
+        padding: 0 0 0 $base-unit;
+        margin: 0;
+        list-style-type: square;
+
+        li {
+          border: 0;
+          padding: 0;
+          margin: math.div($base-unit,2) 0;
+
+          &:before,
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

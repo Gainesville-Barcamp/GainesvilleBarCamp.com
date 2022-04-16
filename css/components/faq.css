@@ -1,0 +1,75 @@
+/*------------------------------
+Frequently asked questions
+-------------------------------*/
+.frequently-asked-question {
+  padding-top: 0;
+}
+.frequently-asked-question .col-full {
+  grid-row: 1;
+}
+.frequently-asked-question .col-left,
+.frequently-asked-question .col-right {
+  grid-row: 2;
+}
+@media (max-width: 900px) {
+  .frequently-asked-question .col-left,
+.frequently-asked-question .col-right {
+    grid-row: auto;
+  }
+}
+@media (max-width: 900px) {
+  .frequently-asked-question .col-right {
+    margin-top: 3.2rem;
+  }
+}
+.frequently-asked-question ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.frequently-asked-question ul li {
+  position: relative;
+  padding: 3.2rem;
+  margin: 3.2rem 0 0 0;
+  background: #FBFCFD;
+  border: 1px solid #ECF0F1;
+}
+.frequently-asked-question ul li:before, .frequently-asked-question ul li:after {
+  content: "";
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+.frequently-asked-question ul li:first-child {
+  margin-top: 0;
+}
+.frequently-asked-question ul li:first-child:before, .frequently-asked-question ul li:first-child:after {
+  height: 1px;
+  width: 5rem;
+  right: 0;
+  top: 0;
+  background: #cc208e;
+}
+.frequently-asked-question ul li:first-child:after {
+  right: 5rem;
+  background: #6713d2;
+}
+.frequently-asked-question ul li:last-child {
+  margin-bottom: 0;
+}
+.frequently-asked-question ul li p {
+  font-size: 1.8rem;
+  max-width: 90%;
+}
+.frequently-asked-question ul li > ul {
+  padding: 0 0 0 1.6rem;
+  margin: 0;
+  list-style-type: square;
+}
+.frequently-asked-question ul li > ul li {
+  border: 0;
+  padding: 0;
+  margin: 0.8rem 0;
+}
+.frequently-asked-question ul li > ul li:before, .frequently-asked-question ul li > ul li:after {
+  display: none;
+}

@@ -1,3 +1,43 @@
+// :root {
+//   --base-unit: 16px;
+//   --sans-font-family: 'Roboto', sans-serif;
+//   --base-font-family: var(--sans-font-family);
+//   --base-font-color: #596377;
+//   --base-line-height: 1.5;
+//   --base-font-size: 3rem;
+
+//   --teen-party--primary: #cc208e, ;
+//   --teen-party--secondary: #6713d2;
+//   --cotton-candy--primary: #00dbde, ;
+//   --cotton-candy--secondary: #fc00ff;
+//   --sunset--primary: #231557, ;
+//   --sunset--secondary: #44107A;
+//   --sunset--tertiary: #FF1361, ;
+//   --sunset--quaternary: #FFF800;
+//   --mist--primary: #3d3393, ;
+//   --mist--secondary: #2b76b9;
+//   --mist--tertiary: #2cacd1, ;
+//   --mist--quaternary: #35eb93;
+//   --midnight: #2A2E39;
+//   --specter: #ECF0F1;
+//   --off-white: #FBFCF;
+
+//   --gradient-teen-party: linear-gradient(var(--teen-party--primary) 0%, var(--teen-party--secondary) 100%);
+//   --gradient-cotton-candy: linear-gradient(var(--cotton-candy--primary) 0%, var(--cotton-candy--secondary) 100%);
+//   --gradient-sunset: linear-gradient(var(--sunset--primary) 0%, var(--sunset--secondary) 30%, var(--sunset--tertiary) 60%, var(--sunset--quaternary) 100%);
+//   --gradient-mist: linear-gradient(var(--mist--primary) 0%, var(--mist--secondary) 30%, var(--mist--tertiary) 60%, var(--mist--quaternary) 100%);
+
+// }
+
+// .visually-hidden {
+//   font-size: 0px;
+//   line-height: 1;
+//   color: transparent;
+//   text-shadow: none;
+//   background-color: transparent;
+//   border: 0;
+// }
+
 
 $base-unit:                    16px;
 $sans-font-family:              'Roboto', sans-serif;
@@ -7,17 +47,17 @@ $base-line-height:              1.5;
 $base-font-size:                3rem;
 
 $barcamp-colors: (
-  'teen-party--primary':         #cc208e, 
+  'teen-party--primary':         #cc208e,
   'teen-party--secondary':       #6713d2,
-  'cotton-candy--primary':       #00dbde, 
+  'cotton-candy--primary':       #00dbde,
   'cotton-candy--secondary':     #fc00ff,
-  'sunset--primary':             #231557, 
+  'sunset--primary':             #231557,
   'sunset--secondary':           #44107A,
-  'sunset--tertiary':            #FF1361, 
+  'sunset--tertiary':            #FF1361,
   'sunset--quaternary':          #FFF800,
-  'mist--primary':               #3d3393, 
+  'mist--primary':               #3d3393,
   'mist--secondary':             #2b76b9,
-  'mist--tertiary':              #2cacd1, 
+  'mist--tertiary':              #2cacd1,
   'mist--quaternary':            #35eb93,
   'midnight':                    #2A2E39,
   'specter':                     #ECF0F1,
@@ -86,8 +126,3 @@ $mist:                            linear-gradient(barcamp-color('mist--primary')
   background-color: transparent;
   border: 0;
 }
-
-
-
-
-

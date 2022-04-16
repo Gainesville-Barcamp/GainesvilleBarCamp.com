@@ -1,0 +1,119 @@
+/*------------------------------
+Our Tracks
+-------------------------------*/
+.our-tracks .col-full > .photo-themes {
+  position: relative;
+  padding: 3.2rem;
+  margin: 0;
+  background-blend-mode: screen;
+  background-image: url("/images/photo-003.jpg"), linear-gradient(#00dbde 0%, #fc00ff 100%);
+  background-size: cover;
+  min-height: 50rem;
+}
+.our-tracks .col-full > .photo-themes:before, .our-tracks .col-full > .photo-themes:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+}
+.our-tracks .col-full > .photo-themes ul {
+  z-index: 500;
+  position: relative;
+  padding: 6.4rem 0;
+  margin: 0 auto;
+  text-align: center;
+  list-style-type: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.our-tracks .col-full > .photo-themes ul li {
+  position: relative;
+  vertical-align: top;
+  text-align: left;
+  display: inline-block;
+  padding: 3.2rem 1.6rem;
+  margin: 1.6rem;
+  max-width: 30rem;
+  min-width: 25rem;
+  height: 30rem;
+  background: #fff;
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.15);
+}
+.our-tracks .col-full > .photo-themes ul li p {
+  text-align: left;
+  font-size: 1.8rem;
+  line-height: 1.25;
+  margin-bottom: 3.2rem;
+}
+.our-tracks .col-full > .photo-themes ul li i {
+  font-size: 1.6rem;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0.8rem 1.6rem;
+  position: absolute;
+  top: calc(-1 * 0.8rem);
+  right: calc(-1 * 0.8rem);
+  background: #6713d2;
+}
+.our-tracks .col-full > table {
+  z-index: 500;
+  position: relative;
+  width: 100%;
+  max-width: 90rem;
+  margin: -5.9rem auto 0 auto;
+  background: #fff;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
+}
+.our-tracks .col-full > table th,
+.our-tracks .col-full > table td {
+  text-align: left;
+  padding: 1.6rem;
+}
+.our-tracks .col-full > table thead th {
+  text-align: left;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #fff;
+  background: #2A2E39;
+}
+.our-tracks .col-full > table tbody tr:first-child td {
+  background: #ECF0F1;
+}
+.our-tracks .col-full > table tbody tr:first-child td:first-child {
+  width: 20rem;
+}
+.our-tracks .col-full > table tbody td {
+  font-size: 1.8rem;
+  border-top: 1px solid #dde4e6;
+}
+.our-tracks .col-full > table tbody td small {
+  margin-top: 0.8rem;
+  display: block;
+  font-size: 1.4rem;
+  width: 90%;
+}
+.our-tracks .col-full > table tbody td small ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.our-tracks .col-full > table tbody td small ul li {
+  display: inline-block;
+  margin-right: 1.6rem;
+}
+.our-tracks .col-full > table tfoot td {
+  text-align: center;
+  border-top: 1px solid #dde4e6;
+  background: #ECF0F1;
+}
+.our-tracks .col-full > table tfoot td small {
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 0.4rem 0.4rem 0.4rem 4.8rem;
+  background: transparent url("/svg/tracks-small.svg") no-repeat;
+  background-position: left center;
+}

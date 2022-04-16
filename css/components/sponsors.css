@@ -1,0 +1,37 @@
+/*------------------------------
+Our Sponsors
+-------------------------------*/
+.our-sponsors ul {
+  position: relative;
+  z-index: 100;
+  padding: 1.6rem;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+.our-sponsors ul li {
+  vertical-align: top;
+  text-align: center;
+  margin: 0;
+  padding: 3.2rem;
+  border-top: 1px solid #ECF0F1;
+}
+.our-sponsors ul li:first-child {
+  border-top: 0;
+}
+.our-sponsors ul li a {
+  position: relative;
+  display: inline-block;
+}
+.our-sponsors ul li a:before, .our-sponsors ul li a:after {
+  display: none;
+}
+.our-sponsors ul li img {
+  width: 25rem;
+  height: auto;
+}
+.our-sponsors ul li img.tall {
+  height: 20rem;
+  width: auto;
+}

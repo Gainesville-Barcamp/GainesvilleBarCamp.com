@@ -1,22 +1,15 @@
 {
-  "name": "Gainesvillebarcamp.com",
+  "name": "pubsub",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Gainesville-Barcamp/Barcamp-2020",
-  "author": "Kyle Redon <kyle.redon@gmail.com>",
   "license": "MIT",
-  "private": true,
-  "scripts": {
-    "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --no-minify  --no-source-maps --out-dir ."
-  },
-  "devDependencies": {
-    "cssnano": "^5.1.7",
-    "node-sass": "^6.0.1",
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.23.1"
-  },
   "dependencies": {
-    "yarn": "^1.22.0"
+    "autoprefixer": "^10.4.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.3.11",
+    "postcss-pxtorem": "^6.0.0"
   }
 }
