@@ -99,10 +99,10 @@ header.hero {
     }
 
     .photo--hero {
+      position: relative; // Anchor register button.
       width: 450px;
-      max-height: 630px;
       overflow: hidden;
-      box-shadow: 0 #{math.div($base-unit, 2)} $base-unit * 2 0 rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0 #{math.div($base-unit, 2)} $base-unit * 2 rgba(0, 0, 0, 0.15));
 
       img {
         width: 450px;
@@ -110,4 +110,20 @@ header.hero {
       }
     }
   }
+}
+
+.button-register {
+  position: relative;
+  z-index: 300; // @todo figure wtf z-index needs to be this high.
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px 40px;
+  transform: translatey(-50%);
+  border-color: transparent;
+  background: barcamp-color("teen-party--secondary");
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  transition: none;
 }
