@@ -13,7 +13,7 @@ Where is BarCamp
   max-width: 107rem;
   max-height: 53.5rem;
   margin: 0 auto;
-  background-image: url("/images/hippodrome-small.jpg"), var(--theme--active--gradient);
+  background-image: url("/images/hippodrome-small.webp"), var(--theme--active--gradient);
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
@@ -29,7 +29,7 @@ Where is BarCamp
   padding: 6.4rem 3.2rem;
   color: #fff;
   width: 60rem;
-  background: #2A2E39;
+  background: var(--midnight);
   background-repeat: no-repeat;
   background-position: center left;
 }

@@ -1,5 +1,6 @@
 (() => {
   const body = document.body;
+  const themeChooser = document.querySelector('.themes');
 
   function setTheme(theme) {
     body.classList = ""
@@ -25,8 +26,10 @@
   function handleClick(e) {
     if (e.target.matches('a')) {
       setTheme(e.target.dataset.theme);
+      themeChooser.querySelectorAll('a').forEach(el => el.classList.remove('is-selected'));
+      e.target.classList.add('is-selected');
     }
   }
 
-  document.querySelector('.themes').addEventListener('click', handleClick);
+  themeChooser.addEventListener('click', handleClick);
 })();

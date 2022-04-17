@@ -1,7 +1,7 @@
 @use 'sass:math';
 @import "../variables";
 
-ul.themes {
+.themes {
   z-index: 1000;
   position: fixed;
   top: 80px;
@@ -14,7 +14,7 @@ ul.themes {
   padding: $base-unit;
   margin: 0;
   text-align: center;
-  background: barcamp-color("midnight");
+  background: var(--midnight);
   box-shadow: 0 math.div($base-unit,2) $base-unit * 2 0 rgba(42, 56, 57, 0.15);
 
   li {
@@ -52,60 +52,29 @@ ul.themes {
       animation-delay: 0.75s;
     }
 
-    a:where(:not(.button)) {
+    a {
+      text-indent: -1000px;
       position: relative;
       display: inline-block;
       height: $base-unit;
       width: $base-unit;
-      @include hide-text;
       background: #fff;
+      overflow: hidden;
 
-      &.cotton-candy {
-        &:before {
-          transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
-          background: barcamp-color("cotton-candy--primary");
-        }
-
-        &:after {
-          transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
-          background: barcamp-color("cotton-candy--secondary");
-        }
+      &:before {
+        transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+        background: var(--theme--active--primary);
       }
 
-      &.sunset {
-        &:before {
-          transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
-          background: barcamp-color("sunset--primary");
-        }
-
-        &:after {
-          transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
-          background: barcamp-color("sunset--secondary");
-        }
+      &:after {
+        transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+        background: var(--theme--active--secondary);
       }
 
-      &.mist {
-        &:before {
-          transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
-          background: barcamp-color("mist--primary");
-        }
-
-        &:after {
-          transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
-          background: barcamp-color("mist--secondary");
-        }
-      }
-
-      &.teen-party {
-        &:before {
-          transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
-          background: barcamp-color("teen-party--primary");
-        }
-
-        &:after {
-          transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
-          background: barcamp-color("teen-party--secondary");
-        }
+      &.is-selected:after,
+      &.is-selected:before {
+        width: 100%;
+        left: 0;
       }
     }
   }

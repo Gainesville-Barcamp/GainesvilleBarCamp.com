@@ -11,7 +11,7 @@ Our Tracks
       padding: $base-unit * 2;
       margin: 0;
       background-blend-mode: screen;
-      background-image: url("/images/photo-003.jpg"), var(--theme--active--gradient);
+      background-image: url("/images/photo-003.webp"), var(--theme--active--gradient);
       background-size: cover;
       min-height: 500px;
 
@@ -91,12 +91,12 @@ Our Tracks
         font-size: 2.4rem;
         font-weight: 300;
         color: #fff;
-        background: barcamp-color("midnight");
+        background: var(--midnight);
       }
 
       tbody tr:first-child {
         td {
-          background: barcamp-color("specter");
+          background: var(--specter);
         }
 
         td:first-child {
@@ -106,7 +106,7 @@ Our Tracks
 
       tbody td {
         font-size: 1.8rem;
-        border-top: 1px solid darken(barcamp-color("specter"), 5%);
+        border-top: 1px solid var(--specter);
 
         small {
           margin-top: math.div($base-unit,2);
@@ -129,8 +129,8 @@ Our Tracks
 
       tfoot td {
         text-align: center;
-        border-top: 1px solid darken(barcamp-color("specter"), 5%);
-        background: barcamp-color("specter");
+        border-top: 1px solid var(--specter);
+        background: var(--specter);
 
         small {
           display: inline-block;

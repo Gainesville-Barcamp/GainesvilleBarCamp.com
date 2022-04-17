@@ -8,7 +8,7 @@ footer {
   color: #fff;
   margin-bottom: 0;
   padding: $base-unit * 2 $base-unit * 2 $base-unit * 2 $base-unit * 8;
-  background: barcamp-color("midnight")
+  background: var(--midnight)
     url('/svg/barcamp-logo.svg')
     no-repeat 32px center;
 
@@ -64,67 +64,3 @@ footer {
     }
   }
 }
-
-/*
-
-footer {
-  grid-column-start: 1;
-  grid-column-end: 10;
-  padding: $base-unit*2;
-  color: #fff;
-  background: barcamp-color('midnight');
-
-  .column {
-    text-align: left;
-
-    &--share {
-      padding-left: $base-unit*6;
-      background: transparent url('/svg/footer-share.svg) no-repeat;
-      background-position: left center;
-    }
-
-    &--connect {
-
-      ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-
-        li {
-          display: inline-block;
-          margin: 0 $base-unit;
-
-          &:first-child {
-            margin-left: 0;
-          }
-
-          a:before,
-          a:after {
-            display: none;
-          }
-
-        }
-      }
-
-      @media screen and (max-width: 800px) {
-        padding-top: $base-unit*2;
-      }
-
-    }
-
-    b {
-      display: block;
-      font-weight: 400;
-      font-size: 1.8rem;
-      margin-bottom: $base-unit;
-    }
-
-    p {
-      font-size: 1.8rem;
-    }
-
-  }
-
-}
-
-*/

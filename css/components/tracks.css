@@ -6,7 +6,7 @@ Our Tracks
   padding: 3.2rem;
   margin: 0;
   background-blend-mode: screen;
-  background-image: url("/images/photo-003.jpg"), var(--theme--active--gradient);
+  background-image: url("/images/photo-003.webp"), var(--theme--active--gradient);
   background-size: cover;
   min-height: 50rem;
 }
@@ -78,17 +78,17 @@ Our Tracks
   font-size: 2.4rem;
   font-weight: 300;
   color: #fff;
-  background: #2A2E39;
+  background: var(--midnight);
 }
 .our-tracks .col-full > table tbody tr:first-child td {
-  background: #ECF0F1;
+  background: var(--specter);
 }
 .our-tracks .col-full > table tbody tr:first-child td:first-child {
   width: 20rem;
 }
 .our-tracks .col-full > table tbody td {
   font-size: 1.8rem;
-  border-top: 1px solid #dde4e6;
+  border-top: 1px solid var(--specter);
 }
 .our-tracks .col-full > table tbody td small {
   margin-top: 0.8rem;
@@ -107,8 +107,8 @@ Our Tracks
 }
 .our-tracks .col-full > table tfoot td {
   text-align: center;
-  border-top: 1px solid #dde4e6;
-  background: #ECF0F1;
+  border-top: 1px solid var(--specter);
+  background: var(--specter);
 }
 .our-tracks .col-full > table tfoot td small {
   display: inline-block;

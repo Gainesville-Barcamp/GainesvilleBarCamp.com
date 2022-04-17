@@ -15,7 +15,7 @@ Our Sponsors
   text-align: center;
   margin: 0;
   padding: 3.2rem;
-  border-top: 1px solid #ECF0F1;
+  border-top: 1px solid var(--specter);
 }
 .our-sponsors ul li:first-child {
   border-top: 0;
