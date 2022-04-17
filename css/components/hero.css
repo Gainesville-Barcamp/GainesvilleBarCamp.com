@@ -1,106 +1,83 @@
 /*------------------------------
 Hero
 -------------------------------*/
-header.hero {
+.hero {
   margin: 0 auto;
   grid-gap: 0;
   align-items: center;
 }
 @media (max-width: 900px) {
-  header.hero {
+  .hero {
     grid-template-columns: 1fr;
   }
 }
-header.hero .col-left {
+.hero .col-left {
   grid-column: 1/7;
   grid-row: 1;
   z-index: 1;
   padding: 9.6rem;
-  background: #2A2E39 url("/images/plus-texture.svg") no-repeat right center;
+  background: var(--midnight) url("/images/plus-texture.svg") no-repeat right center;
 }
 @media (max-width: 900px) {
-  header.hero .col-left {
+  .hero .col-left {
     padding: 3.2rem;
   }
 }
-header.hero .col-left .logo {
+.hero .col-left .logo {
   position: relative;
   display: inline-block;
   width: 30rem;
   height: 27rem;
 }
-header.hero .col-left .logo path {
+.hero .col-left .logo path {
   transition: fill 0.2s;
 }
-header.hero .col-left h1 {
+.hero .col-left h1 {
   margin-top: 6.4rem;
   color: #fff;
 }
-header.hero .col-left h1 small {
+.hero .col-left h1 small {
   margin-top: 0;
   text-align: left;
   display: block;
   font-weight: 300;
   font-size: 2.4rem;
 }
-header.hero .col-left p {
+.hero .col-left p {
   color: #fff;
   margin-top: 3.2rem 0 0 0;
   max-width: 50rem;
   font-weight: 300;
   font-size: 2.4rem;
 }
-header.hero .col-left .btn {
-  margin-top: 3.2rem;
-  padding: 2.4rem 3.2rem;
-  width: 100%;
-  max-width: 50rem;
-  font-size: 2.4rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1px;
-  font-weight: 300;
-  color: #cc208e;
-  border: 1px solid #cc208e;
-  transition: all 0.5s ease-in-out;
-}
-header.hero .col-left .btn:hover {
-  color: #fff;
-  border: 1px solid transparent;
-}
-header.hero .col-left small {
+.hero .col-left small {
   display: block;
   max-width: 50rem;
   margin: 1.6rem 0 0 0;
   font-size: 1.6rem;
   text-align: center;
 }
-header.hero .col-right {
+.hero .col-right {
   grid-column: 6/-1;
   grid-row: 1;
   z-index: 2;
 }
 @media (max-width: 900px) {
-  header.hero .col-right {
+  .hero .col-right {
     display: none;
   }
 }
-header.hero .col-right .photo--hero {
+.hero .col-right .photo--hero {
   position: relative;
   width: 45rem;
   overflow: hidden;
   filter: drop-shadow(0 0.8rem 3.2rem rgba(0, 0, 0, 0.15));
 }
-header.hero .col-right .photo--hero img {
-  width: 45rem;
-  height: auto;
-}
 
 .button-register {
   position: relative;
   z-index: 300;
-  display: block;
+  display: flex;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -108,9 +85,17 @@ header.hero .col-right .photo--hero img {
   padding: 2rem 4rem;
   transform: translatey(-50%);
   border-color: transparent;
-  background: #6713d2;
+  background: var(--theme--active--primary);
+  transition: background 0.2s;
   color: white;
   font-size: 2.8rem;
   font-weight: bold;
-  transition: none;
+}
+.button-register img {
+  width: 1.5rem;
+  margin-left: 0.5rem;
+  transition: transform 0.3s;
+}
+.button-register:hover img, .button-register:focus img {
+  transform: translatex(0.5rem);
 }

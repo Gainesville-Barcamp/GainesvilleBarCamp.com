@@ -35,8 +35,8 @@ Frequently asked questions
       position: relative;
       padding: $base-unit * 2;
       margin: $base-unit * 2 0 0 0;
-      background: barcamp-color("off-white");
-      border: 1px solid barcamp-color("specter");
+      background: var(--off-white);
+      border: 1px solid var(--specter);
 
       &:before,
       &:after {

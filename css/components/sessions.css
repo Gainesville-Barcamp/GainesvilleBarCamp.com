@@ -48,7 +48,7 @@ Our Sessions
   height: auto;
   background: #fff;
   box-shadow: 0 8px 32px 0 rgba(42, 56, 57, 0.15);
-  border: 1px solid #ECF0F1;
+  border: 1px solid var(--specter);
 }
 .our-sessions .col-left .session:before, .our-sessions .col-left .session:after,
 .our-sessions .col-right .session:before,
@@ -72,7 +72,7 @@ Our Sessions
   display: inline-block;
   width: 15rem;
   background-size: cover;
-  background: #2A2E39 url("/svg/session-vr.svg") no-repeat top left;
+  background: var(--midnight) url("/svg/session-vr.svg") no-repeat top left;
 }
 .our-sessions .col-left .session_vr .photo-themes,
 .our-sessions .col-left .session_vr .photo-themes span,
@@ -114,25 +114,25 @@ Our Sessions
 }
 .our-sessions .col-left .session--holly .session_vr,
 .our-sessions .col-right .session--holly .session_vr {
-  background: #ECF0F1 url(../images/holly.jpg) no-repeat;
+  background: var(--specter) url(../images/holly.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 .our-sessions .col-left .session--derek .session_vr,
 .our-sessions .col-right .session--derek .session_vr {
-  background: #ECF0F1 url(../images/derek.jpg) no-repeat;
+  background: var(--specter) url(../images/derek.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 .our-sessions .col-left .session--michelle-peter .session_vr,
 .our-sessions .col-right .session--michelle-peter .session_vr {
-  background: #ECF0F1 url(../images/michelle-peter.jpg) no-repeat;
+  background: var(--specter) url(../images/michelle-peter.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 .our-sessions .col-left .session--watt .session_vr,
 .our-sessions .col-right .session--watt .session_vr {
-  background: #ECF0F1 url(../images/WATT.jpg) no-repeat;
+  background: var(--specter) url(../images/WATT.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }

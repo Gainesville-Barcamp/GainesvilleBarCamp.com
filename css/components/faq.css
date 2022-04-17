@@ -31,8 +31,8 @@ Frequently asked questions
   position: relative;
   padding: 3.2rem;
   margin: 3.2rem 0 0 0;
-  background: #FBFCFD;
-  border: 1px solid #ECF0F1;
+  background: var(--off-white);
+  border: 1px solid var(--specter);
 }
 .frequently-asked-question ul li:before, .frequently-asked-question ul li:after {
   content: "";

@@ -37,7 +37,7 @@ html {
 body {
   font-family: $sans-font-family;
   font-size: 1.6rem;
-  color: barcamp-color("midnight");
+  color: var(--midnight);
 }
 
 a {

@@ -52,7 +52,7 @@ Our Sessions
       height: auto;
       background: #fff;
       box-shadow: 0 math.div($base-unit,2) $base-unit * 2 0 rgba(42, 56, 57, 0.15);
-      border: 1px solid barcamp-color("specter");
+      border: 1px solid var(--specter);
 
       &:before,
       &:after {
@@ -75,7 +75,7 @@ Our Sessions
         display: inline-block;
         width: 150px;
         background-size: cover;
-        background: barcamp-color("midnight")
+        background: var(--midnight)
           url('/svg/session-vr.svg')
           no-repeat top left;
 
@@ -118,26 +118,26 @@ Our Sessions
       }
 
       &--holly .session_vr {
-        background: barcamp-color("specter") url(../images/holly.jpg) no-repeat;
+        background: var(--specter) url(../images/holly.jpg) no-repeat;
         background-size: cover;
         background-position: center;
       }
 
       &--derek .session_vr {
-        background: barcamp-color("specter") url(../images/derek.jpg) no-repeat;
+        background: var(--specter) url(../images/derek.jpg) no-repeat;
         background-size: cover;
         background-position: center;
       }
 
       &--michelle-peter .session_vr {
-        background: barcamp-color("specter") url(../images/michelle-peter.jpg)
+        background: var(--specter) url(../images/michelle-peter.jpg)
           no-repeat;
         background-size: cover;
         background-position: center;
       }
 
       &--watt .session_vr {
-        background: barcamp-color("specter") url(../images/WATT.jpg) no-repeat;
+        background: var(--specter) url(../images/WATT.jpg) no-repeat;
         background-size: cover;
         background-position: center;
       }

@@ -19,7 +19,7 @@ Our Sponsors
       text-align: center;
       margin: 0;
       padding: $base-unit * 2;
-      border-top: 1px solid barcamp-color("specter");
+      border-top: 1px solid var(--specter);
 
       &:first-child {
         border-top: 0;
