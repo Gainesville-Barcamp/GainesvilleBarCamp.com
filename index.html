@@ -28,26 +28,30 @@
     <meta name="og:site_name" content="BarCamp GNV 2022">
     <meta name="og:type" content="website">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="/css/typography.css">
-    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/base/typography.css">
+    <link rel="stylesheet" href="/css/base/variables.css">
+    <link rel="stylesheet" href="/css/base/animations.css">
     <link rel="stylesheet" href="/css/base/base.css">
+    <link rel="stylesheet" href="/css/base/themes.css">
     <link rel="stylesheet" href="/css/layout/grid.css">
     <link rel="stylesheet" href="/css/components/hero.css">
     <link rel="stylesheet" href="/css/components/what-is-barcamp.css">
     <link rel="stylesheet" href="/css/components/faq.css">
     <link rel="stylesheet" href="/css/components/location.css">
+    <link rel="stylesheet" href="/css/components/logo.css">
     <link rel="stylesheet" href="/css/components/tracks.css">
+    <link rel="stylesheet" href="/css/components/photo-themes.css">
     <link rel="stylesheet" href="/css/components/sessions.css">
     <link rel="stylesheet" href="/css/components/sponsors.css">
     <link rel="stylesheet" href="/css/components/footer.css">
-    <link rel="stylesheet" href="/css/components/themes.css">
+    <link rel="stylesheet" href="/css/components/theme-chooser.css">
   </head>
   <body class="cotton-candy">
     <ul class="themes">
-      <li><a href="#/" class="cotton-candy" onclick="setTheme('cotton-candy')">cotton candy theme</a></li>
-      <li><a href="#/" class="sunset" onclick="setTheme('sunset')">sunset theme</a></li>
-      <li><a href="#/" class="mist" onclick="setTheme('mist')">mist theme</a></li>
-      <li><a href="#/" class="teen-party" onclick="setTheme('teen-party')">teen party</a></li>
+      <li><a href="#/" data-theme="cotton-candy" class="cotton-candy">cotton candy theme</a></li>
+      <li><a href="#/" data-theme="sunset" class="sunset">sunset theme</a></li>
+      <li><a href="#/" data-theme="mist" class="mist">mist theme</a></li>
+      <li><a href="#/" data-theme="teen-party" class="teen-party">teen party</a></li>
     </ul>
     <header class="hero">
         <div class="col-left">
@@ -74,10 +78,6 @@
         <div class="col-right">
           <div class="photo--hero">
             <div class="photo-themes">
-              <span class="teen-party"></span>
-              <span class="cotton-candy"></span>
-              <span class="sunset"></span>
-              <span class="mist"></span>
               <img src="/images/photo-hero.jpg" alt="Attendee adding a talk">
             </div>
             <a target="_blank" href="https://www.eventbrite.com/e/barcamp-by-startgnv-tickets-304111003197#tickets" class="button button-register">Register</a>
@@ -89,17 +89,9 @@
         <div class="photo-grid">
           <div class="texture"></div>
           <div class="photo--001 photo-themes">
-            <span class="teen-party"></span>
-            <span class="cotton-candy"></span>
-            <span class="sunset"></span>
-            <span class="mist"></span>
             <img src="/images/photo-001.jpg" alt="Talk: 3D printing as a hobby">
           </div>
           <div class="photo--002 photo-themes">
-            <span class="teen-party"></span>
-            <span class="cotton-candy"></span>
-            <span class="sunset"></span>
-            <span class="mist"></span>
             <img src="/images/photo-002.jpg" alt="Talk: Upcycled Percussion">
           </div>
         </div>
@@ -267,12 +259,7 @@
             25 SE 2nd Pl, Gainesville, FL 32601
           </a>
         </div>
-<iframe title="The Hippodrome: 25 Se 2nd Pl, Gainesville, FL 32601" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.426159449708!2d-82.32612668396983!3d29.649405644078662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8a38d36eefa4d%3A0x4923dede90951057!2sHippodrome%20Theatre!5e0!3m2!1sen!2sus!4v1649377956552!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <span class="teen-party"></span>
-        <span class="cotton-candy"></span>
-        <span class="sunset"></span>
-        <span class="mist"></span>
-        <!-- Image by <a href="https://commons.wikimedia.org/wiki/User:Ebyabe" target="_blank">Ebyabe</a> CC BY-SA 2.5 -->
+        <iframe title="The Hippodrome: 25 Se 2nd Pl, Gainesville, FL 32601" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.426159449708!2d-82.32612668396983!3d29.649405644078662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8a38d36eefa4d%3A0x4923dede90951057!2sHippodrome%20Theatre!5e0!3m2!1sen!2sus!4v1649377956552!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </div>
     </section>
     <section class="our-tracks">
@@ -311,10 +298,6 @@
               </p>
             </li>
           </ul>
-          <span class="teen-party"></span>
-          <span class="cotton-candy"></span>
-          <span class="sunset"></span>
-          <span class="mist"></span>
         </div>
 
       </div>
@@ -344,7 +327,7 @@
             </a>
           </li>
           <li>
-            <a href="mailto:team@startgnv.com" class="__web-inspector-hide-shortcut__">
+            <a href="mailto:team@startgnv.com" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
                 <path fill="#FFF" d="M0.790770402,5.44738453 C1.4412319,5.79753835 10.4553852,10.6387688 10.7907698,10.8190765 C11.1261544,10.9993842 11.5612313,11.085538 11.9987697,11.085538 C12.4363082,11.085538 12.8701543,10.9993842 13.2067697,10.8190765 C13.5421543,10.6387688 22.5550768,5.79753835 23.2055383,5.44738453 C23.8572306,5.0972307 24.4726151,4 23.2769229,4 L0.71938579,4 C-0.476306446,4 0.139078133,5.0972307 0.790770402,5.44738453 Z M23.481846,8.11384591 C22.7427691,8.50030742 13.6590773,13.2486148 13.2067697,13.4855379 C12.754462,13.722461 12.4363082,13.7532302 11.9987697,13.7532302 C11.5600005,13.7532302 11.2430775,13.722461 10.7907698,13.4855379 C10.3384621,13.2498456 1.25538576,8.50030742 0.515693495,8.11384591 C-0.00553724315,7.84184592 1.21805666e-06,8.16123052 1.21805666e-06,8.40615358 L1.21805666e-06,18.1870761 C1.21805666e-06,18.7458453 0.744616558,19.4652298 1.32246268,19.4652298 L22.6775383,19.4652298 C23.2553844,19.4652298 23.9999998,18.7458453 23.9999998,18.1870761 L23.9999998,8.40615358 C23.9999998,8.16123052 24.0024613,7.84184592 23.481846,8.11384591 Z" transform="translate(0 -4)"></path>
               </svg>
@@ -359,30 +342,6 @@
         </p>
       </div>
     </footer>
-    <script type="text/javascript">
-      var body = document.body;
-
-      function setTheme(theme) {
-        body.classList = ""
-        body.classList.add(theme);
-        var metaThemeColor = document.querySelector("meta[name=theme-color]");
-
-        switch(theme) {
-          case "cotton-candy":
-            metaThemeColor.setAttribute("content", '#00dbde');
-            break;
-          case "sunset":
-            metaThemeColor.setAttribute("content", '#FF1361');
-            break;
-          case "mist":
-            metaThemeColor.setAttribute("content", '#35eb93');
-            break;
-          default:
-            metaThemeColor.setAttribute("content", '#cc208e');
-        }
-        return false;
-      }
-
-    </script>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>

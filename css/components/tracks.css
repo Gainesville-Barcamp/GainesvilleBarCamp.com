@@ -6,7 +6,7 @@ Our Tracks
   padding: 3.2rem;
   margin: 0;
   background-blend-mode: screen;
-  background-image: url("/images/photo-003.jpg"), linear-gradient(#00dbde 0%, #fc00ff 100%);
+  background-image: url("/images/photo-003.jpg"), var(--theme--active--gradient);
   background-size: cover;
   min-height: 50rem;
 }
@@ -54,7 +54,7 @@ Our Tracks
   position: absolute;
   top: calc(-1 * 0.8rem);
   right: calc(-1 * 0.8rem);
-  background: #6713d2;
+  background: var(--theme--active--secondary);
 }
 .our-tracks .col-full > table {
   z-index: 500;

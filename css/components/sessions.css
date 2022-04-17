@@ -59,13 +59,13 @@ Our Sessions
   width: 5rem;
   right: 0;
   bottom: 0;
-  background: #cc208e;
+  background: var(--theme--active--primary);
   transition: all 0.5s ease-in-out;
 }
 .our-sessions .col-left .session:after,
 .our-sessions .col-right .session:after {
   right: 5rem;
-  background: #6713d2;
+  background: var(--theme--active--secondary);
 }
 .our-sessions .col-left .session_vr,
 .our-sessions .col-right .session_vr {
@@ -95,7 +95,7 @@ Our Sessions
   position: absolute;
   top: calc(-1 * 0.8rem);
   right: calc(-1 * 0.8rem);
-  background: #6713d2;
+  background: var(--theme--active--secondary);
 }
 .our-sessions .col-left .session_content h4,
 .our-sessions .col-right .session_content h4 {

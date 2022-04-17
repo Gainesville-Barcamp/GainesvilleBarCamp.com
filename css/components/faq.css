@@ -47,11 +47,11 @@ Frequently asked questions
   width: 5rem;
   right: 0;
   top: 0;
-  background: #cc208e;
+  background: var(--theme--active--primary);
 }
 .frequently-asked-question ul li:first-child:after {
   right: 5rem;
-  background: #6713d2;
+  background: var(--theme--active--secondary);
 }
 .frequently-asked-question ul li:last-child {
   margin-bottom: 0;

@@ -1,0 +1,120 @@
+ul.themes {
+  z-index: 1000;
+  position: fixed;
+  top: 8rem;
+  left: 0;
+  vertical-align: top;
+  height: auto;
+  width: auto;
+  line-height: 1;
+  font-size: 0 !important;
+  padding: 1.6rem;
+  margin: 0;
+  text-align: center;
+  background: #2A2E39;
+  box-shadow: 0 8px 32px 0 rgba(42, 56, 57, 0.15);
+}
+ul.themes li {
+  display: block;
+  height: 1.6rem;
+  width: 1.6rem;
+  padding: 0;
+  margin: 1.6rem 0;
+  opacity: 0;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  transition: all 0.25s ease-in-out;
+}
+ul.themes li:hover {
+  transform: scale(1.25);
+}
+ul.themes li:first-child {
+  margin-top: 0;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+ul.themes li:nth-child(2) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+ul.themes li:nth-child(3) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+ul.themes li:nth-child(4) {
+  margin-bottom: 0;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+ul.themes li a:where(:not(.button)) {
+  position: relative;
+  display: inline-block;
+  height: 1.6rem;
+  width: 1.6rem;
+  font-size: 0px;
+  line-height: 1;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  background: #fff;
+}
+ul.themes li a:where(:not(.button)).cotton-candy:before {
+  transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+  background: #00dbde;
+}
+ul.themes li a:where(:not(.button)).cotton-candy:after {
+  transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  background: #fc00ff;
+}
+ul.themes li a:where(:not(.button)).sunset:before {
+  transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+  background: #231557;
+}
+ul.themes li a:where(:not(.button)).sunset:after {
+  transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  background: #44107A;
+}
+ul.themes li a:where(:not(.button)).mist:before {
+  transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+  background: #3d3393;
+}
+ul.themes li a:where(:not(.button)).mist:after {
+  transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  background: #2b76b9;
+}
+ul.themes li a:where(:not(.button)).teen-party:before {
+  transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+  background: #cc208e;
+}
+ul.themes li a:where(:not(.button)).teen-party:after {
+  transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  background: #6713d2;
+}
+@media screen and (min-width: 1440px) {
+  ul.themes {
+    left: calc(50% - 72rem);
+  }
+}
+@media only screen and (max-width: 600px) {
+  ul.themes {
+    width: auto;
+    max-width: 20rem;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+  }
+  ul.themes li {
+    display: inline-block;
+    margin: 0 0.8rem;
+    padding: 0;
+  }
+}

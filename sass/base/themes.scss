@@ -1,0 +1,35 @@
+@use 'sass:math';
+@import "../variables";
+
+
+/*------------------------------
+Themes
+-------------------------------*/
+
+.teen-party {
+  --theme--active--gradient: var(--gradient-teen-party);
+  --theme--active--primary: var(--teen-party--primary);
+  --theme--active--secondary: var(--teen-party--secondary);
+  --theme--selection: var(--teen-party--secondary);
+}
+
+.sunset {
+  --theme--active--gradient: var(--gradient-sunset);
+  --theme--active--primary: var(--sunset--tertiary);
+  --theme--active--secondary: var(--sunset--quaternary);
+  --theme--selection: var(--sunset--tertiary);
+}
+
+.cotton-candy {
+  --theme--active--gradient: var(--gradient-cotton-candy);
+  --theme--active--primary: var(--cotton-candy--primary);
+  --theme--active--secondary: var(--cotton-candy--secondary);
+  --theme--selection: var(--cotton-candy--secondary);
+}
+
+.mist {
+  --theme--active--gradient: var(--gradient-mist);
+  --theme--active--primary: var(--mist--primary);
+  --theme--active--secondary: var(--mist--secondary);
+  --theme--selection: var(--mist--tertiary);
+}

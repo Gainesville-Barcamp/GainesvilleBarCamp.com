@@ -11,7 +11,7 @@ Our Tracks
       padding: $base-unit * 2;
       margin: 0;
       background-blend-mode: screen;
-      background-image: url("/images/photo-003.jpg"), $cotton-candy;
+      background-image: url("/images/photo-003.jpg"), var(--theme--active--gradient);
       background-size: cover;
       min-height: 500px;
 
@@ -62,7 +62,7 @@ Our Tracks
             position: absolute;
             top: calc(-1 * #{math.div($base-unit,2)});
             right: calc(-1 * #{math.div($base-unit,2)});
-            background: barcamp-color("teen-party--secondary");
+            background: var(--theme--active--secondary);
           }
         }
       }
