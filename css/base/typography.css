@@ -1,0 +1,92 @@
+:root {
+  --base-unit: 1.6rem;
+  --sans-font-family: "Roboto", sans-serif;
+  --base-font-family: var(--sans-font-family);
+  --base-font-color: #596377;
+  --base-line-height: 1.5;
+  --base-font-size: 3rem;
+  --theme--active--primary: var(--teen-party--primary);
+  --theme--active--secondary: var(--teen-party--secondary);
+  --theme--active--gradient: var(--gradient-teen-party);
+  --teen-party--primary: #cc208e;
+  --teen-party--secondary: #6713d2;
+  --cotton-candy--primary: #00dbde;
+  --cotton-candy--secondary: #fc00ff;
+  --sunset--primary: #231557;
+  --sunset--secondary: #44107A;
+  --sunset--tertiary: #FF1361;
+  --sunset--quaternary: #FFF800;
+  --mist--primary: #3d3393;
+  --mist--secondary: #2b76b9;
+  --mist--tertiary: #2cacd1;
+  --mist--quaternary: #35eb93;
+  --midnight: #2A2E39;
+  --specter: #ECF0F1;
+  --off-white: #FBFCFF;
+  --gradient-teen-party: linear-gradient(var(--teen-party--primary) 0%, var(--teen-party--secondary) 100%);
+  --gradient-cotton-candy: linear-gradient(var(--cotton-candy--primary) 0%, var(--cotton-candy--secondary) 100%);
+  --gradient-sunset: linear-gradient(var(--sunset--primary) 0%, var(--sunset--secondary) 30%, var(--sunset--tertiary) 60%, var(--sunset--quaternary) 100%);
+  --gradient-mist: linear-gradient(var(--mist--primary) 0%, var(--mist--secondary) 30%, var(--mist--tertiary) 60%, var(--mist--quaternary) 100%);
+}
+
+.teen-party {
+  --theme--active--gradient: var(--gradient-teen-party);
+  --theme--active--primary: var(--teen-party--primary);
+  --theme--active--secondary: var(--teen-party--secondary);
+  --theme--selection: var(--teen-party--secondary);
+}
+
+.sunset {
+  --theme--active--gradient: var(--gradient-sunset);
+  --theme--active--primary: var(--sunset--tertiary);
+  --theme--active--secondary: var(--sunset--quaternary);
+  --theme--selection: var(--sunset--tertiary);
+}
+
+.cotton-candy {
+  --theme--active--gradient: var(--gradient-cotton-candy);
+  --theme--active--primary: var(--cotton-candy--primary);
+  --theme--active--secondary: var(--cotton-candy--secondary);
+  --theme--selection: var(--cotton-candy--secondary);
+}
+
+.mist {
+  --theme--active--gradient: var(--gradient-mist);
+  --theme--active--primary: var(--mist--primary);
+  --theme--active--secondary: var(--mist--secondary);
+  --theme--selection: var(--mist--tertiary);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 3.2rem 0;
+  line-height: 1.2;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2.4rem;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.25;
+}
